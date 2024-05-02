@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Wong Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<!-- Three types of font classes to use.
+1) text-title => Main titles, attention grabber. Set the colour and size.
+2) text-sub => Complement the main title.
+3) text-main => Set the color
+4) Everything else is just black by default.
+-->
+<body>
+    <!-- Snackbar Notification -->
+    <span id="snackbar" class="secondary accent">Copied!</span>
+
+    <header id="top-of-page"> <!-- Must set an ID for back to top button to work. -->
+        <div class="logo-top-left">Nathan Wong</div>
+        <div class="links">
+            <li class="nav-links"><a href="#section-about-me">About</a></li>
+            <li class="nav-links"><a href="#section-skills">Skills</a></li>
+            <li class="nav-links"><a href="#section-projects">Projects</a></li>
+            <li class="nav-links"><a href="#section-contact-me">Contact Me</a></li>
+        </div>
+    </header>
+    <div id="content">
+        <!-- Section 1: Landing-->
+        <section id="section-landing">
+            <div class="pfp-landing-container">
+                <img src="./assets/pfp.png" alt="">
+            </div>
+
+            <div class="info-landing">
+                <h3 class="text-sub">Hi there! I'm,</h3>
+                <h1 class="text-title">Nathan Wong</h1>
+                <h2 class="text-sub">Software Developer</h2>
+
+                <div class="btn-container-landing">
+                    <button class="btn-resume">Resume</button>
+                    <button class="btn-about-me"><a href="#section-contact-me">Contact Info</a></button>
+                </div>
+
+                <div class="btn-container-landing">
+                    <!-- First link here has class "email-icon" = copy to clipboard. -->
+                    <img class="icon email-icon" src="./assets/email-icon.webp" alt="">
+                    <a href="https://www.linkedin.com/in/nathanwong780/" target="_blank"><img class="icon" src="./assets/linkedin-icon.png" alt=""></a>
+                    <a href="https://github.com/Eoljjang" target="_blank"><img class="icon" src="./assets/github-logo.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Section 2: About Me -->
+        <section id="section-about-me">
+            <div class="title-about-me">
+                <h3 class="text-sub">I'd love to tell you more</h3>
+                <h1 class="text-title">About Me</h1>
+            </div>
+
+            <div class="cards-about-me">
+                <div class="pfp-card-container">
+                    <img src="./assets/card-pfp-2.jpeg" alt="">
+                </div>
+
+                <div class="summary-cards-about-me">
+                    <div class="education-card">
+                        <div class="card-icon">
+                            <img src="./assets/education-icon.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="text-main">Education</h3>
+                            <p class="text-sub">B.Sc Specialization in Computing Science</p>
+                            <p class="text-sub">Minor in Business</p>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="card-icon">
+                            <img src="./assets/experience-icon.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="text-main">Experience</h3>
+                            <p class="text-sub">2+ Years in Intro Software Development</p>
+                            <p class="text-sub">1+ Years as a Progamming Tutor</p>
+                            <p class="text-sub">6+ Years in Customer Service</p>
+                        </div>
+
+                    </div>
+                    <div class="hobbies-card">
+                        <div class="card-icon">
+                            <img src="./assets/hobbies-icon.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="text-main">Hobbies</h3>
+                            <p class="text-sub">Volleyball, Musician, Cooking </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-about-me">
+                Hello there! 👋 I'm a passionate fourth-year Specialization in Computing Science student with a keen interest in software development. 
+                Blending my technical expertise with a strategic mindset, I've also pursued a minor in Business to broaden my understanding of the intersection between technology and 
+                commerce specifically in Operations Management. Outside of school, you'll find me on the volleyball courts, staying active in the gym, and building custom mechanical
+                keyboards! Below you'll find some of my key skills, software projects, and UI + UX design projects. Feel free to take a look through them, and don't hestiate
+                to reach out if you have any questions.            
+            </div>
+
+        </section>
+
+        <hr> <!-- For some reason more than one hr doesn't work. -->
+
+        <!-- Section 3) Skills -->
+        <section id="section-skills">
+            <div class="title-skills">
+                <h3 class="text-sub">Explore my</h3>
+                <h1 class="text-title">Skills</h1>
+            </div>
+
+            <!-- Skill container 1) Languages-->
+            <div class="skill-container">
+                <div class="title-skill-container">
+                    <h3 class="text-main">Languages</h3>
+                </div>
+
+                <div class="article-container"> <!-- Container for holding the skill cards. -->
+                    
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Python</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">HTML</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">CSS</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Javascript</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">C</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Java</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Assembly</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Python</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- Skill container 2) Technical Stack-->
+            <div class="skill-container">
+                <div class="title-skill-container">
+                    <h3 class="text-main">Technical Stack</h3> <!-- Container for holding the skill cards. -->
+                </div>
+
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">SQLiten</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">MongoDB</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Django</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Heroku</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">M. Office</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Notion</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">React</p>
+                    </article>
+
+                    <article>
+                        <img src="./assets/verified.png" alt="" class="icon">
+                        <p class="article-skill">Figma</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Section 4) Projects-->
+        <section id="section-projects">
+            <div class="title-projects">
+                <h3 class="text-sub">Take a look at my,</h3>
+                <h1 class="text-title">Projects</h1>   
+                <a href="https://github.com/Eoljjang/projects"><img class="icon" src="./assets/github-logo.png" alt="">  </a>
+            </div>
+            
+            <!-- A project card has: (1) A preview (2) A title (3) A description -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/qr_hunter_project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/QRHunter" target="_blank">QR Hunter</a></h3>
+                        <p class="text-sub">Android Application || Teamwork || Software Engineering</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/social_distribution_project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/Social%20Distribution" target="_blank">Social Distribution Site</a></h3>
+                        <p class="text-sub">Web Dev || REST API || Teamwork || Multi-User Support</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/prof-bio-project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/KL_ProfWebsite" target="_blank">Professor Biography Site</a></h3>
+                        <p class="text-sub">Web Dev || Freelance </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/visualizer-project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/Sorting%20Visualizer" target="_blank">Sorting Visualizer</a></h3>
+                        <p class="text-sub">RISC-V Assembly || Data Structure & Algorithms</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/pong-project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/Pong" target="_blank">Pong</a></h3>
+                        <p class="text-sub">Made in PyGame || Multiplayer || OOP</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/organizer-project.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/tree/main/fileOrganizer" target="_blank">File Organizer</a></h3>
+                        <p class="text-sub">Python || Automation</p>
+                    </div>
+                </div>
+
+                <!-- DESIGN PROJECTS -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/figma-icon.webp" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://github.com/Eoljjang/projects/blob/main/TaskManager/README.md" target="_blank">Task Manager IOS App</a></h3>
+                        <p class="text-sub">Figma | Design | Prototyping</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/melon-cappi-logo.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://www.figma.com/file/kl8ppj4cIy01KfmGIOUXX0/Promotional-Material?type=design&node-id=0%3A1&mode=design&t=1BEnKlaT0un2B2ug-1" target="_blank">Graphic Design for Local Business</a></h3>
+                        <p class="text-sub">Figma | Promo Material | Design</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="./assets/Logo-awake.png" alt="">
+                    </div>
+
+                    <div class="project-caption">
+                        <h3 class="text-main"><a href="https://www.figma.com/file/9qilsPzZkAQK8YCqVf4KvS/Design?type=design&node-id=0%3A1&mode=design&t=p8v07NqQNMQkgCdr-1" target="_blank">Website Redesign for Local Business</a></h3>
+                        <p class="text-sub">Figma | Custom Libraries | Auto-layouts | Design</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 5)  -->
+        
+
+        <hr>
+        <!-- Section 6) Contact Me -->
+        <section id="section-contact-me">
+            <div class="title-contact-me">
+                <h3 class="text-sub">Let's get in touch,</h3>
+                <h1 class="text-title">Contact Me</h1> 
+            </div>
+
+            <div class="contact-btn-container">
+                <button class="contact-button" id="contact-email">Email</button>
+                <button class="contact-button" id="contact-linkedIn"><a href="https://www.linkedin.com/in/nathanwong780/" target="_blank">LinkedIn</a></button>
+                <button class="contact-button" id="contact-GitHub"><a href="https://github.com/Eoljjang" target="_blank">GitHub</a></button>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="links">
+                <li class="nav-links"><a href="#section-about-me">About</a></li>
+                <li class="nav-links"><a href="#section-skills">Skills</a></li>
+                <li class="nav-links"><a href="#section-projects">Projects</a></li>
+                <li class="nav-links"><a href="#section-contact-me">Contact Me</a></li>
+            </div>
+            <p>Copyright &#169; 2024 Nathan Wong. All Rights Reserved.</p> <!-- &#169 = copyright symbol -->
+            <a href="#top-of-page"><button id="btn-back-to-top">&#8593 Back to Top</button></a>
+        </footer>
+    </div>
+</body>
+</html>

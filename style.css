@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Some assets:
+Nice Box Shadow: box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+*/
+
+
+html {
+    font-size: 16px; /* Set the default rem size */
+    scroll-behavior: smooth;
+}
+
+:root{
+    --text-title: #272829; /* Darker */
+    --text-main: #272829;
+    --text-sub: rgb(85, 85, 85); /* Lighter */
+    --text-accent: #FFF6E0; /* Accent colour */
+    --text-blue: #00ccff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ /* Note: Entire body is flexed */
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none; /* removes link styling */
+    color: inherit; /* make all link:visited the text colour of the parent element */
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+}
+
+.text-title{
+    color: var(--text-title);
+    font-size: 3rem;
+}
+
+.text-sub{
+    color: var(--text-sub);
+}
+
+.text-accent{
+    color: var(--text-accent);
+}
+
+.text-main{
+    color: var(--text-main);
+}
+
+hr{
+    border: none;
+    height: 0.5px;
+    width: 50%; /* this should always match the section width, otherwise it just looks a bit strange */
+    align-self: center;
+    background-color: var(--text-title);
+
+    /* Note: This is how I separate sections by space */
+    margin-bottom: 5rem; 
+    margin-top: 5rem;
+}
+
+section{
+    width: 60%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem;
+}
+
+.logo-top-left{
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none; /* removes the bullet points */
+}
+
+.links a{
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+.links li{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+}
+
+.links li:hover{
+    cursor: pointer;
+    background: var(--text-sub);
+    color: white;
+    transition: all 500ms ease;
+}
+
+/* SECTION 1: LANDING */
+#section-landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 5rem; /* only needed for this specific section */
+}
+
+.info-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+}
+
+.pfp-landing-container{
+    display: flex; /* Centers the profile picture correctly */
+    clip-path: circle();
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
+.btn-container-landing{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-resume{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+
+    border-radius: 2rem;
+    background-color: white;
+    border: 1px solid var(--text-title);
+
+}
+
+.btn-about-me{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+
+    background-color: var(--text-title);
+    color: white;
+    border: 1px solid var(--text-accent);
+}
+
+.btn-resume:hover{ /* Invert button colour when hovering */
+    cursor: pointer;
+    background-color: var(--text-title);
+    color: white;
+}
+
+.btn-about-me:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--text-title);
+    border: 1px solid var(--text-title);
+}
+
+/* SECTION 2: ABOUT ME */
+#section-about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.title-about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-about-me{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.pfp-card-container img{
+    border-radius: 2rem; /* Styling the image itself have to target it specifically */
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.summary-cards-about-me{ /* Container holding all the summary cards. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.education-card, .experience-card, .hobbies-card{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+
+    border: 1px solid var(--text-main);
+    width: 100%;
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-icon{ /* Styling each icon for the cards */
+    display: flex;
+    border: 1px solid var(--text-main);
+    border-radius: 2rem;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.description-about-me{
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+/* Section 3) Skills */
+#section-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.skill-container{ /* Contains the title-text + article container */
+    border: 1px solid var(--text-main);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.title-skill-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.article-container{ /* Contains the title-text + article container */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+article {
+    flex-direction: column;
+    display: flex;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 6rem;
+}
+
+/* SECTION 4) Projects */
+#section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 70%;
+    gap: 1rem;
+}
+
+.project-card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    border: 1px solid var(--text-main);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1rem;
+}
+
+.project-card:hover{
+    scale: 115%;
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.project-preview{ /* Container for holding the image preview */
+    display: flex; /* Centers the profile picture correctly */
+    clip-path: circle();
+    width: 75px;
+    height: 75px;
+    margin: auto 0;
+}
+
+.project-caption a{
+    color: inherit; /* Removes hyperlink colouring */
+}
+
+
+/* SECTION 6) CONTACT ME */
+#section-contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.title-contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact-button{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+
+    background-color: var(--text-title);
+    color: white;
+    border: 1px solid var(--text-accent);
+    font-size: larger;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--text-main);
+    border: 1px solid var(--text-title);
+}
+
+.contact-button a:visited{
+    color: inherit; /* Fix the visited link colour */
+}
+
+/* FOOTER */
+footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+#btn-back-to-top{ /* Sends user back to the top of the page. */
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: #00ccff;
+    color: var(--text-main);
+    border: 1px solid var(--text-accent);
+    font-size: 1.05rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#btn-back-to-top:hover{
+    scale: 115%;
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+/* SNACKBAR NOTIFICATION */
+#snackbar{
+    visibility: hidden;
+    color: var(--text-main);
+    background-color: var(--text-blue);
+    font-size: larger;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid var(--text-accent);
+
+
+    min-width: 200px;
+    margin-left: -125px; /* Makes it centered on screen */
+    border-radius: 2rem;
+    padding: 1.15rem;
+    text-align: center;
+    left: 50%;
+    top: 3rem;
+    z-index: 999; /* Puts it on top of everything else */
+    position: fixed; /* Always shows it at the bottom of the screen */
+}
+
+/* This will be activated when the snackbar's class is 'show' which will be added through JS */
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -moz-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Standard unprefixed animation */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Allow for Firefox support */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
