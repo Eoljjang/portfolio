@@ -338,6 +338,10 @@ article {
     transition: all 300ms ease;
 }
 
+.project-card:not(:hover){
+    transition: 0.3s;
+}
+
 .project-preview{ /* Container for holding the image preview */
     display: flex; /* Centers the profile picture correctly */
     clip-path: circle();
