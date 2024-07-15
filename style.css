@@ -45,6 +45,11 @@ a {
     height: 35px;
 }
 
+.react-icon{
+    width: 35px;
+    height: auto;
+}
+
 .text-title{
     color: var(--text-title);
     font-size: 3rem;
